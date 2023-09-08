@@ -62,7 +62,7 @@ export default {
     <div class="hand-container">
       
 
-      <div class="hand1">สีฟ้า
+      <div class="hand1">ทีม สีฟ้า
         <img v-if="selectedHands.includes('rock1')" 
         src="/img/hand-rock-svgrepo-com.svg" 
         alt="rock_logo" 
@@ -85,7 +85,7 @@ export default {
       
       </div>
 
-      <div class="hand2">สีแดง
+      <div class="hand2">ทีม สีแดง
         <img v-if="selectedHands.includes('rock2')" 
         src="/img/hand-rock-svgrepo-com.svg"  
         alt="rock_logo" 
