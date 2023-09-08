@@ -55,6 +55,11 @@ export default {
 };
 </script>
 <template>
+  <div class="container">
+    <div class="glassmorphism"></div>
+  </div>
+  <div class="Game">Game เป่ายิ้งฉุบ</div>
+
   <div class="game-container">
     <img class="all"
           src="/img/All.png" 
@@ -120,33 +125,48 @@ export default {
     <div class = "restart"> 
     <button @click="resetGame">เริ่มใหม่</button>
     </div> 
+    
 </template>
 
 <style >
 :root {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-image: url(https://i.pinimg.com/564x/c4/f5/07/c4f5071c83bef83ada21d34b3ae1c49b.jpg);
+  
 
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 200px;
-  min-height: auto;
-  background: #201f1f;
+  margin: auto;
+  padding: auto;
+  width: 90%;
+  height: 80%;
+  border-top: 2px solid #ffffff75;
+  border-left: 2px solid #ffffff75;
+  box-shadow: 5px 5px 12px #00000072;
+  background: rgba(0, 0, 0, 0.145);
+  border-radius: 30px;
+ 
+  backdrop-filter: blur(20px);
+  
+
 }
 
 button {
+  margin: 20px;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 20px;
   font-size: 40px;
+  border-top: 2px solid #ffffff75;
+  border-left: 2px solid #ffffff75;
+  box-shadow: 5px 5px 12px #00000072;
+  color: #000000;
+  
  
 
-  background-color: #1a1a1a;
+  background-color: #ffffff;
 
   transition: border-color 0.25s;
 }
@@ -163,12 +183,14 @@ button {
 }
 
 .hand1{
+  border-radius: 30px;
   background-color: #8457ff;
   font-size: 40px;
 
 
 }
 .hand2{
+  border-radius: 30px;
   background-color: #ff5757;
   font-size: 40px;
 
@@ -186,8 +208,10 @@ button {
   
 }
 .all{
-  height: 300px;
-  padding:  30px;
+  border-radius: 10px;
+  margin: auto;
+  height: 100px;
+  padding-bottom: 20px;
 
 
 }
@@ -197,19 +221,41 @@ button {
 
 
 .blue{
-  color: #8457ff;
+  color: #ffffff;
   font-size: 30px;
+  background: linear-gradient( #9169ff , #8457ff , #593aad );
+  border-radius: 30px;
+  box-shadow: 5px 5px 12px #00000072;
+
+
 
 }
 .red{
-  color: #ff5757;
+  color: #ffffff;
   font-size: 30px;
+  background: linear-gradient( #ff6262 , #f74c4c , #a33737 );
+
+  border-radius: 30px;
+  box-shadow: 5px 5px 12px #00000072;
 
 
 }
 .score-board{
   text-align: center;
   margin: 20px;
+
+
+
+
+}
+.Game{
+  color: #ffffff;
+  font-size: 30px;
+  font-style: normal;
+  border-top: 2px solid #ffffff75;
+  border-block: 2px solid #ffffff75;
+  margin: 20px;
+
 
 
 
